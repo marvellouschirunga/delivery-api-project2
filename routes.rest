@@ -1,0 +1,229 @@
+
+//DEV
+###Get all deliveries
+GET http://localhost:3000/deliveries HTTP/1.1
+
+
+###Get delivery by Id
+GET http://localhost:3000/deliveries/651755851b7ce75e03fa517b HTTP/1.1
+
+
+###Create delivery
+POST http://localhost:3000/deliveries HTTP/1.1
+content-type: application/json
+
+{
+  "_id": "651755851b7ce75e03fa517b",
+  "customerDetails": {
+  "shipperDetails": {
+  "postalCode": "",
+  "cityName": "Harare",
+  "countryCode": "ZW",
+  "addressLine1": "2 OLD MUTARE ROAD MSASA",
+  "addressLine2": "BE 1298 BELVEDERE"
+  },
+  "receiverDetails": {
+  "postalCode": "",
+  "cityName": "Harare",
+  "countryCode": "ZW",
+  "addressLine1": "CNR CENTRAL AVENUE",
+  "addressLine2": "4TH STREET",
+  "countyName": "HARARE"
+  }
+  },
+  "accounts": [
+  {
+  "typeCode": "shipper",
+  "number": "337024726"
+  }
+  ],
+  "productCode": "N",
+  "valueAddedServices": [],
+  "payerCountryCode": "KE",
+  "plannedShippingDateAndTime": "2023-06-31T23:00:00GMT+03:00",
+  "unitOfMeasurement": "metric",
+  "isCustomsDeclarable": false,
+  "requestAllValueAddedServices": false,
+  "returnStandardProductsOnly": false,
+  "nextBusinessDay": true,
+  "productTypeCode": "all",
+  "packages": [
+  {
+  "weight": 2.5,
+  "dimensions": {
+  "length": 25,
+  "width": 10,
+  "height": 5
+  }
+  }
+  ]
+  }
+
+###Update delivery
+PUT http://localhost:3000/deliveries/651755851b7ce75e03fa517b HTTP/1.1
+content-type: application/json
+
+{
+  "_id": "651755851b7ce75e03fa517b",
+  "customerDetails": {
+  "shipperDetails": {
+  "postalCode": "",
+  "cityName": "Harare",
+  "countryCode": "ZW",
+  "addressLine1": "2 OLD MUTARE ROAD MSASA",
+  "addressLine2": "BE 1298 BELVEDERE"
+  },
+  "receiverDetails": {
+  "postalCode": "",
+  "cityName": "Harare",
+  "countryCode": "ZW",
+  "addressLine1": "CNR CENTRAL AVENUE",
+  "addressLine2": "4TH STREET",
+  "countyName": "HARARE"
+  }
+  },
+  "accounts": [
+  {
+  "typeCode": "shipper",
+  "number": "337024726"
+  }
+  ],
+  "productCode": "N",
+  "valueAddedServices": [],
+  "payerCountryCode": "KE",
+  "plannedShippingDateAndTime": "2023-06-31T23:00:00GMT+03:00",
+  "unitOfMeasurement": "metric",
+  "isCustomsDeclarable": false,
+  "requestAllValueAddedServices": false,
+  "returnStandardProductsOnly": false,
+  "nextBusinessDay": true,
+  "productTypeCode": "all",
+  "packages": [
+  {
+  "weight": 2.5,
+  "dimensions": {
+  "length": 25,
+  "width": 10,
+  "height": 5
+  }
+  }
+  ]
+  }
+
+###Delete delivery
+DELETE http://localhost:3000/deliveries/650ec559fedb3fe85a2e7495 HTTP/1.1
+
+
+
+//PRODUCTION
+###Get all deliveries
+GET https://project1-9wq1.onrender.com/deliveries HTTP/1.1
+
+
+###Get delivery by Id
+GET https://project1-9wq1.onrender.com/deliveries/651755851b7ce75e03fa517b HTTP/1.1
+
+###Create delivery
+POST https://project1-9wq1.onrender.com/deliveries HTTP/1.1
+content-type: application/json
+
+{
+  "_id": "651755851b7ce75e03fa517b",
+  "customerDetails": {
+  "shipperDetails": {
+  "postalCode": "",
+  "cityName": "Harare",
+  "countryCode": "ZW",
+  "addressLine1": "2 OLD MUTARE ROAD MSASA",
+  "addressLine2": "BE 1298 BELVEDERE"
+  },
+  "receiverDetails": {
+  "postalCode": "",
+  "cityName": "Harare",
+  "countryCode": "ZW",
+  "addressLine1": "CNR CENTRAL AVENUE",
+  "addressLine2": "4TH STREET",
+  "countyName": "HARARE"
+  }
+  },
+  "accounts": [
+  {
+  "typeCode": "shipper",
+  "number": "337024726"
+  }
+  ],
+  "productCode": "N",
+  "valueAddedServices": [],
+  "payerCountryCode": "KE",
+  "plannedShippingDateAndTime": "2023-06-31T23:00:00GMT+03:00",
+  "unitOfMeasurement": "metric",
+  "isCustomsDeclarable": false,
+  "requestAllValueAddedServices": false,
+  "returnStandardProductsOnly": false,
+  "nextBusinessDay": true,
+  "productTypeCode": "all",
+  "packages": [
+  {
+  "weight": 2.5,
+  "dimensions": {
+  "length": 25,
+  "width": 10,
+  "height": 5
+  }
+  }
+  ]
+  }
+
+###Update delivery
+PUT https://project1-9wq1.onrender.com/651755851b7ce75e03fa517b HTTP/1.1
+content-type: application/json
+
+{
+  "_id": "651755851b7ce75e03fa517b",
+  "customerDetails": {
+  "shipperDetails": {
+  "postalCode": "",
+  "cityName": "Harare",
+  "countryCode": "ZW",
+  "addressLine1": "2 OLD MUTARE ROAD MSASA",
+  "addressLine2": "BE 1298 BELVEDERE"
+  },
+  "receiverDetails": {
+  "postalCode": "",
+  "cityName": "Harare",
+  "countryCode": "ZW",
+  "addressLine1": "CNR CENTRAL AVENUE",
+  "addressLine2": "4TH STREET",
+  "countyName": "HARARE"
+  }
+  },
+  "accounts": [
+  {
+  "typeCode": "shipper",
+  "number": "337024726"
+  }
+  ],
+  "productCode": "N",
+  "valueAddedServices": [],
+  "payerCountryCode": "KE",
+  "plannedShippingDateAndTime": "2023-06-31T23:00:00GMT+03:00",
+  "unitOfMeasurement": "metric",
+  "isCustomsDeclarable": false,
+  "requestAllValueAddedServices": false,
+  "returnStandardProductsOnly": false,
+  "nextBusinessDay": true,
+  "productTypeCode": "all",
+  "packages": [
+  {
+  "weight": 2.5,
+  "dimensions": {
+  "length": 25,
+  "width": 10,
+  "height": 5
+  }
+  }
+  ]
+  }
+
+###Delete delivery
+DELETE https://project1-9wq1.onrender.com/deliveries/651755851b7ce75e03fa517b HTTP/1.1

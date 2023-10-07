@@ -1,0 +1,203 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Delivery API",
+    "description": "Delivery API",
+    "version": "1.0.0"
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "paths": {
+    "/deliveries/": {
+      "get": {
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Deliveries"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "customerDetails": {
+                  "example": "any"
+                },
+                "accounts": {
+                  "example": "any"
+                },
+                "productCode": {
+                  "example": "any"
+                },
+                "requestAllValueAddedServices": {
+                  "example": "any"
+                },
+                "payerCountryCode": {
+                  "example": "any"
+                },
+                "plannedShippingDateAndTime": {
+                  "example": "any"
+                },
+                "unitOfMeasurement": {
+                  "example": "any"
+                },
+                "isCustomsDeclared": {
+                  "example": "any"
+                },
+                "returnStandardProductsOnly": {
+                  "example": "any"
+                },
+                "nextBusinessDay": {
+                  "example": "any"
+                },
+                "productTypeCode": {
+                  "example": "any"
+                },
+                "packages": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/deliveries/{id}": {
+      "get": {
+        "tags": [
+          "Deliveries"
+        ],
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Deliveries"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "customerDetails": {
+                  "example": "any"
+                },
+                "accounts": {
+                  "example": "any"
+                },
+                "productCode": {
+                  "example": "any"
+                },
+                "requestAllValueAddedServices": {
+                  "example": "any"
+                },
+                "payerCountryCode": {
+                  "example": "any"
+                },
+                "plannedShippingDateAndTime": {
+                  "example": "any"
+                },
+                "unitOfMeasurement": {
+                  "example": "any"
+                },
+                "isCustomsDeclared": {
+                  "example": "any"
+                },
+                "returnStandardProductsOnly": {
+                  "example": "any"
+                },
+                "nextBusinessDay": {
+                  "example": "any"
+                },
+                "productTypeCode": {
+                  "example": "any"
+                },
+                "packages": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Delivery"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    }
+  }
+}
