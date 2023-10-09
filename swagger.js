@@ -3,9 +3,9 @@ const swaggerAutogen = require('swagger-autogen')();
 const doc = {
     info: {
         title: 'Delivery API',
-        description: 'Delivery API'
+        description: 'Delivery API by Marvellous Chirunga'
     },
-    host: 'https://delivery-sys-api.onrender.com/',
+    host: 'delivery-sys-api.onrender.com/',
     schemes: ['http', 'https']
 };
 

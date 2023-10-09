@@ -144,7 +144,7 @@ const updateDelivery = async(req, res) => {
 
 
 const deleteDelivery = async (req, res) => {
-    //#swagger.tags=['Delivery']
+    //#swagger.tags=['Deliveries']
     if (!ObjectId.isValid(req.params.id)) {
         res.status(400).json('Must use a valid contact id to delete a delivery.');
         return;
