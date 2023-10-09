@@ -151,7 +151,7 @@ const deleteDelivery = async (req, res) => {
     }
     const deliveryId = new ObjectId(req.params.id);
     try {
-        const response = await mongodb.getDatabase().db().collection('delivery').deleteOne({ _id: deliveryId });
+        const response = await mongodb.getDatabase().db().collection('deliveries').deleteOne({ _id: deliveryId });
         if (response.deletedCount > 0) {
             res.status(204).send("Deletion Successful"); // Deletion successful
         } else {
