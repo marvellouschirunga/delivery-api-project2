@@ -8,8 +8,7 @@
   "host": "delivery-sys-api.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http",
-    "https"
+      "https"
   ],
   "paths": {
     "/deliveries/": {
