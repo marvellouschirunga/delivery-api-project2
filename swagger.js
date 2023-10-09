@@ -5,7 +5,7 @@ const doc = {
         title: 'Delivery API',
         description: 'Delivery API'
     },
-    host: 'localhost:3000',
+    host: 'https://delivery-sys-api.onrender.com/',
     schemes: ['http', 'https']
 };
 
