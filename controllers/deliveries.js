@@ -13,6 +13,8 @@ const getAll = async (req, res) => {
     }
 };
 
+//get by id
+
 const getSingle = async (req, res) => {
     const deliveryId = req.params.id;
 

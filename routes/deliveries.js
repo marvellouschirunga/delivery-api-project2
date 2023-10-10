@@ -12,6 +12,6 @@ router.post('/', validation.saveDelivery, deliveriesController.createDelivery);
 
 router.put('/:id', validation.saveDelivery, deliveriesController.updateDelivery);
 
-router.delete('/:id',validation.saveDelivery, deliveriesController.deleteDelivery);
+router.delete('/:id', deliveriesController.deleteDelivery);
 
 module.exports = router;
