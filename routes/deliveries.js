@@ -6,12 +6,12 @@ const validation = require('../middleware/validate');
 
 router.get('/', deliveriesController.getAll);
 
-router.get('/:id', deliveriesController.getSingle);
+router.get('/:id',  validation.saveDelivery,deliveriesController.getSingle);
 
 router.post('/', validation.saveDelivery, deliveriesController.createDelivery);
 
 router.put('/:id', validation.saveDelivery, deliveriesController.updateDelivery);
 
-router.delete('/:id', deliveriesController.deleteDelivery);
+router.delete('/:id',validation.saveDelivery, deliveriesController.deleteDelivery);
 
 module.exports = router;
