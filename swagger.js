@@ -5,8 +5,8 @@ const doc = {
         title: 'Delivery API',
         description: 'Delivery API by Marvellous Chirunga'
     },
-    host: 'delivery-sys-api.onrender.com/',
-    schemes: ['http', 'https']
+    host: 'localHost:3000',            // The hostname and port where the API is hosted
+    schemes: ['http', 'https']         // The communication protocols (HTTP and HTTPS) supported by the API
 };
 
 const outputFile ='./swagger.json';
